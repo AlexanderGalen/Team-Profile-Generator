@@ -1,0 +1,29 @@
+{
+  "name": "teamprofilegenerator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexanderGalen/TeamProfileGenerator.git"
+  },
+  "author": "AlexanderGalen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexanderGalen/TeamProfileGenerator/issues"
+  },
+  "homepage": "https://github.com/AlexanderGalen/TeamProfileGenerator#readme",
+  "devDependencies": {
+    "jest": "^29.0.3"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
