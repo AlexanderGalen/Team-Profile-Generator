@@ -1,0 +1,4 @@
+/* apply custom sizing to any bootstrap card */
+.card {
+    width: 18rem;
+}
