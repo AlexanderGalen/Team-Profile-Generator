@@ -1,9 +1,9 @@
 // import inquirer
 const inquirer = require('inquirer');
 const htmlGen = require("./src/generateHTML.js");
-const Manager = require("./lib/Manager.js");
-const Engineer = require("./lib/Engineer.js");
-const Intern = require("./lib/Intern.js");
+// const Manager = require("./lib/Manager.js");
+// const Engineer = require("./lib/Engineer.js");
+// const Intern = require("./lib/Intern.js");
 
 async function main() {
     const employees = await getEmployees();
@@ -46,11 +46,11 @@ async function getEmployees() {
         officeNumer: managerAnswers.officeNumber,
     }
     
-    console.log(manager);
+    console.log(tempManager);
     // make a new instance of the manager class using user data
-    let manager = new Manager(tempManager.name, tempManager.id, tempManager.email, tempManager.officeNumber);
+    // let manager = new Manager(tempManager.name, tempManager.id, tempManager.email, tempManager.officeNumber);
     // append it to our employees array
-    employees.push(manager);
+    employees.push(tempManager);
 
     let shouldContinue = true;
 
@@ -149,11 +149,11 @@ async function getEmployees() {
 
         // now that we have gathered all of this employee's data,
         // create a new instance of the appropriate class for them
-        if(employee.type == "engineer") {
-            const employee = new Engineer(employeeTemp.name, employeeTemp.id, employeeTemp.email, employeeTemp.github);
+        if(employeeTemp.type == "engineer") {
+            // const employee = new Engineer(employeeTemp.name, employeeTemp.id, employeeTemp.email, employeeTemp.github);
         }
-        else if(employee.type == "intern") {
-            const employee = new Intern(employee.name, employee.id, employee.email, employee.school);
+        else if(employeeTemp.type == "intern") {
+            // const Tempemployee = new Intern(employee.name, employee.id, employee.email, employee.school);
         }
 
         // add it to the employees array
